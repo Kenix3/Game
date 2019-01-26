@@ -27,7 +27,7 @@ public final class RegularPlayer implements CommandListener {
 	}
 
 	public boolean isCommandAllowed(Player player, String cmd) {
-		return Constants.GameServer.PLAYER_COMMANDS || player.isMod();
+		return Constants.GameServer.PLAYER_COMMANDS || player.isStaff();
 	}
 
 	public void handleCommand(String cmd, String[] args, Player player) {
