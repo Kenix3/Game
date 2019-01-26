@@ -301,7 +301,7 @@ public final class Event implements CommandListener {
 			Point objectLoc =  upstairs ? new Point(495,1411) : new Point(495,467);
 			final GameObject existingObject = player.getViewArea().getGameObject(objectLoc);
 
-			if(existingObject != null && existingObject.getType() != 1 && existingObject.getID() != 18) {
+			if(existingObject != null && existingObject.getType() != 1 && existingObject.getID() != 18 && existingObject.getID() != 17) {
 				player.message(messagePrefix + "Could not enable seers party hall " + (upstairs ? "upstairs" : "downstairs") + " object exists: " + existingObject.getGameObjectDef().getName());
 			}
 			else if(existingObject != null && existingObject.getType() != 1 && existingObject.getID() == 18) {
