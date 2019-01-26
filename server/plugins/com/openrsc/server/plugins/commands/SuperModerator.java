@@ -161,7 +161,7 @@ public final class SuperModerator implements CommandListener {
 				newStr += args[i] + " ";
 			}
 			GameLogging.addQuery(new StaffLog(player, 13, newStr.toString()));
-			newStr = player.getStaffName() + player.getUsername() + ": @whi@" + newStr;
+			newStr = player.getStaffName() + ": @whi@" + newStr;
 			for (Player p : World.getWorld().getPlayers()) {
 				ActionSender.sendMessage(p, player, 1, MessageType.GLOBAL_CHAT, newStr, player.getIcon());
 			}
